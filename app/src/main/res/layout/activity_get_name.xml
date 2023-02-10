@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:padding="20sp"
+            android:text="Write the name of your..."
+            />
+    </TableRow>
+
+
+
+    <LinearLayout>
+        <RadioGroup
+            android:id="@+id/radioBtnFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:id="@+id/rdbtnMother"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="20sp"
+                android:text="Mother" />
+            <RadioButton
+                android:id="@+id/rdbtnFather"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Father" />
+            <RadioButton
+                android:id="@+id/rdbtnCat"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Cat" />
+            <RadioButton
+                android:id="@+id/rdbtnDog"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Dog" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TableRow>
+        <View
+            android:layout_height="50px"
+            android:background="@color/white"
+            android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <LinearLayout>
+            <TextView
+                android:id="@+id/txtChecked"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20sp"
+                android:hint="Mother's name"
+                android:text=""
+                />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Send" />
+
+    </TableRow>
+
+
+
+
+
+
+
+</TableLayout>
